@@ -42,7 +42,7 @@ div#input form.form-horizontal div.control-group label.control-label a:hover {
   color: #ff4e00;
 }
 div#input form.form-horizontal.importers div.controls input {
-  font-size: 20px;
+  font-size: 16px;
   width: 300px;
 }
 div#input form.form-horizontal.importers div.controls textarea {
@@ -59,6 +59,17 @@ div#input form#inline-register legend {
   line-height: 1.3;
   margin-bottom: 5px;
 }
+div#input form#inline-register fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+div#input form#inline-register fieldset div.control-group.email {
+  margin-bottom: 0;
+}
+div#input form#inline-register fieldset div.control-group input {
+  width: 300px;
+}
 img.loading {
   height: 30px;
   float: left;
@@ -72,31 +83,6 @@ div.progressbar {
 *****************************************************************************
 *****************************************************************************
 *****************************************************************************/
-#inline-register {
-  clear: both;
-}
-#inline-register fieldset {
-  border: none;
-  width: 450px;
-  margin: 0;
-  padding: 0;
-}
-#inline-register div.form-item {
-  float: left;
-  width: 49%;
-}
-#inline-register div.form-item:first-child {
-  margin-right: 2%;
-}
-div#input #inline-register div.form-item legend {
-  display: block;
-  float: left;
-  width: 100%;
-  text-align: left;
-  font-size: 14px;
-  color: #555;
-  margin: 4px 0 0 3px;
-}
 #inline-register div.form-item span.help-inline {
   margin-top: -20px;
   float: left;
@@ -109,12 +95,6 @@ div#input #inline-register div.form-item legend {
   display: inline;
   margin-top: 0px;
   margin-left: 0;
-}
-div#input #inline-register input {
-  width: 96%;
-}
-div#input input#input_bibtex {
-  border: none;
 }
 li#bibtex-import span.added {
   padding-top: 8px;

@@ -2,6 +2,7 @@
 @import "elements.less";
 @linkColor: #FF4E00;
 @accentColor: #0053b0;
+@inputWidth: 300px;
 
 body.create-collection {
 }
@@ -41,11 +42,11 @@ div#input {
       &.importers {
          div.controls {
             input{
-               font-size:20px;
-               width: 300px;
+               font-size:16px;
+               width: @inputWidth;
             }
             textarea {
-               width: 300px;
+               width: @inputWidth;
             }
          }
       }
@@ -62,6 +63,19 @@ div#input {
          padding: .2em 20px 0 0;
          line-height: 1.3;
          margin-bottom: 5px;
+      }
+      fieldset {
+         border:none;
+         margin:0;
+         padding:0;
+         div.control-group {
+            &.email {
+               margin-bottom:0;
+            }
+            input {
+               width:@inputWidth;
+            }
+         }
       }
    }
 }
@@ -86,33 +100,8 @@ div.progressbar {
 *****************************************************************************
 *****************************************************************************/
 
-#inline-register {
-    clear:both;
-}
-#inline-register fieldset {
-    border:none;
-    width:450px;
-    margin:0;
-    padding:0;
-}
 
-#inline-register div.form-item{
-    float:left;
-    width: 49%;
-}
-#inline-register div.form-item:first-child {
-    margin-right:2%;
-}
-div#input #inline-register  div.form-item legend{
-    display: block;
-    float:left;
-    width:100%;
-    text-align: left;
-    font-size: 14px;
-    color:#555;
-    margin:4px 0 0 3px;
 
-}
 #inline-register div.form-item span.help-inline {
     margin-top: -20px;
     float: left;
@@ -126,12 +115,7 @@ div#input #inline-register  div.form-item legend{
     margin-top: 0px;
     margin-left: 0;
 }
-div#input #inline-register input {
-    width: 96%;
-}
-div#input input#input_bibtex {
-   border:none;
-}
+
 li#bibtex-import {
    span.added {
       padding-top:8px;
