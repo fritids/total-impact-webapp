@@ -8,7 +8,8 @@
 
    <div class="wrapper">
 
-      <form class="form-horizontal importers">
+      <form class="importers">
+         <h3><span class="step-number">1:</span> Add articles</h3>
          <div class="toggler_contents control-group fileupload fileupload-new" data-provides="fileupload" id="bibtex_toggler_contents">
             <label class="control-label" for="input_bibtex" class="prompt">Articles from Google Scholar Profiles<span class="limit"><a id="google-scholar-help-link" href="#">(Click here for help)</a></span></label>
             <div class="controls">
@@ -26,6 +27,11 @@
                <textarea rows="4" cols="40" id="paste_input" class="artifactList no-input-yet" ></textarea>
             </div>
          </div>
+
+      </form>
+      <form class="importers">
+         <h3><span class="step-number">2:</span> Add other products</h3>
+
          <div class="control-group">
             <label for="paste_webpages" class="control-label" >Webpage URLs<span class="limit">(No articles; they go above)</span></label>
             <div class="controls">
@@ -53,6 +59,7 @@
       </form>
 
       <form id="inline-register">
+         <h3><span class="step-number">3:</span> Make report</h3>
          <legend for="inline-user-signup" class="prompt" >Register<span class="limit">Optional; lets you save and find your collection later.</span></legend>
          <fieldset id="inline-user-creds">
             <div class="form-item control-group email">

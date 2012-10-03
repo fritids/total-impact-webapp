@@ -20,33 +20,25 @@ div#input span.limit {
   font-weight: normal;
   font-size: 15px;
 }
-div#input form.form-horizontal {
-  width: 600px;
+div#input form {
+  width: 350px;
+  float: left;
 }
-div#input form.form-horizontal div.controls {
-  margin-left: 270px;
-}
-div#input form.form-horizontal div.control-group label.control-label {
-  width: 250px;
-  font-size: 20px;
+div#input form div.control-group label.control-label {
   color: #555;
   font-weight: bold;
 }
-div#input form.form-horizontal div.control-group label.control-label a {
+div#input form div.control-group label.control-label a {
   text-decoration: none;
   color: #888;
   border-bottom: 2px dotted #888;
 }
-div#input form.form-horizontal div.control-group label.control-label a:hover {
+div#input form div.control-group label.control-label a:hover {
   border-bottom: 2px solid #ff4e00;
   color: #ff4e00;
 }
-div#input form.form-horizontal.importers div.controls input {
+div#input form.importers div.controls input {
   font-size: 16px;
-  width: 300px;
-}
-div#input form.form-horizontal.importers div.controls textarea {
-  width: 300px;
 }
 div#input form#inline-register legend {
   width: 250px;
