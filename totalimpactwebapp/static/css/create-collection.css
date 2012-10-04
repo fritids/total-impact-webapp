@@ -21,10 +21,19 @@ div#input span.limit {
   font-size: 15px;
 }
 div#input form {
-  width: 350px;
+  width: 330px;
   float: left;
 }
+div#input form div.control-group.fileupload {
+  margin-top: 15px;
+}
+div#input form div.control-group.fileupload label.control-label {
+  width: 150px;
+  float: left;
+  margin-bottom: 30px;
+}
 div#input form div.control-group label.control-label {
+  clear: both;
   color: #555;
   font-weight: bold;
 }
@@ -37,30 +46,12 @@ div#input form div.control-group label.control-label a:hover {
   border-bottom: 2px solid #ff4e00;
   color: #ff4e00;
 }
-div#input form.importers div.controls input {
+div#input form div.control-group div.controls input {
   font-size: 16px;
+  width: 240px;
 }
-div#input form#inline-register legend {
-  width: 250px;
-  color: #555;
-  float: left;
-  clear: left;
-  font-size: 20px;
-  text-align: right;
-  padding: .2em 20px 0 0;
-  line-height: 1.3;
-  margin-bottom: 5px;
-}
-div#input form#inline-register fieldset {
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-div#input form#inline-register fieldset div.control-group.email {
-  margin-bottom: 0;
-}
-div#input form#inline-register fieldset div.control-group input {
-  width: 300px;
+div#input form div.control-group div.controls textarea {
+  width: 240px;
 }
 img.loading {
   height: 30px;
@@ -70,23 +61,6 @@ div.progressbar {
   margin: 3px 0 0 5px;
   color: #ff4e00;
   float: left;
-}
-/* inline registration form
-*****************************************************************************
-*****************************************************************************
-*****************************************************************************/
-#inline-register div.form-item span.help-inline {
-  margin-top: -20px;
-  float: left;
-  margin-left: 43px;
-  font-size: 12px;
-  font-weight: normal;
-}
-#inline-register div.form-item img.loading {
-  height: 20px;
-  display: inline;
-  margin-top: 0px;
-  margin-left: 0;
 }
 li#bibtex-import span.added {
   padding-top: 8px;
@@ -125,67 +99,4 @@ li#bibtex-import div.toggler_contents img.loading {
 li#bibtex-import div.toggler_contents div.progressbar {
   font-size: 20px;
   margin-top: 15px;
-}
-/* go-button section
-*****************************************************************************
-*****************************************************************************
-*****************************************************************************/
-p#artcounter {
-  font-size: 20px;
-  margin: 0 0 10px 270px;
-  font-weight: normal;
-  float: left;
-  clear: left;
-}
-p#artcounter span.count {
-  color: #ff4e00;
-  font-weight: bold;
-}
-div#create-button {
-  clear: both;
-  margin-top: 25px;
-}
-div#create-button img.loading {
-  height: 41px;
-  margin: 4px 0 0 46px;
-  margin-top: -50px;
-}
-div#create-button legend,
-div#create-button input {
-  font-size: 30px;
-  font-weight: bold;
-}
-div#create-button input {
-  font-weight: normal;
-  width: 370px;
-  float: left;
-  color: #555;
-  margin-right: 10px;
-}
-div#create-button div.clearfix {
-  clear: both;
-}
-span.added {
-  display: block;
-  font-size: 20px;
-  font-weight: normal;
-  color: #555;
-  padding-top: .2em;
-}
-span.added span.items-added-msg {
-  padding-left: .2em;
-}
-span.added span.count {
-  font-weight: bold;
-}
-#go-button {
-  font-size: 1.5em;
-  height: 42px;
-  margin: 0 0 0 -5px;
-  width: 76px;
-}
-span.sorry {
-  display: block;
-  color: #888;
-  font-size: 15px;
 }
